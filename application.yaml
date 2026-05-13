@@ -10,9 +10,10 @@ spec:
     repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
     targetRevision: HEAD
     path: dev
-  destination: 
+
+  destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: myargoapp
 
   syncPolicy:
     syncOptions:
